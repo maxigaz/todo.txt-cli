@@ -12,7 +12,7 @@ case $1 in
     FILE=$TODO_DIR/$2.txt
   fi
   if [ -n "$EDITOR" ]; then
-    $EDITOR $FILE
+    $EDITOR "$FILE"
   else
     echo "Error: The EDITOR environment variable is not set"
   fi
